@@ -1,0 +1,30 @@
+package firstDecPackage;
+
+import java.util.Scanner;
+
+public class Test1 {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int passingMarks = 40;
+		char grade;
+		System.out.println("Enter the marks you scored in exam ");
+		int marksObtained = sc.nextInt();
+		
+		if(marksObtained >= passingMarks) {
+			if(marksObtained > 90) 
+				grade = 'A';
+			else if(marksObtained > 75) 
+				grade = 'B';
+			else if(marksObtained > 60) 
+				grade = 'C';
+			else 
+				grade = 'D';
+				System.out.println("You passed in exam and your grade is "+grade);
+			
+		}else {
+			grade = 'F';
+			System.out.println("You failed in exam an your grage is "+grade);
+		} 
+		}
+	}
+ 

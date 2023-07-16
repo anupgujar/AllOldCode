@@ -1,0 +1,18 @@
+package firstDecPackage;
+public class Test {
+	String a;
+	int b ;
+	String c;
+	
+	public Test(String a, int b, String c) {
+		super();
+		this.a = a;
+		this.b = b;
+		this.c = c;
+	}
+	public static void main(String[] args) {
+		Test a = new Test("Java", 75, "Main");
+		System.out.println(a);
+	}
+
+}

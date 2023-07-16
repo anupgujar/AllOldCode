@@ -1,0 +1,12 @@
+package firstDecPackage;
+
+public class Static5 {
+	public static void main(String[] args) {
+		Static4 e3 = new Static4(604, "John", "Engineering");
+		Static4 e4 = new Static4(504, "Peter", "Program Management");
+		e3.Dept = Admin;
+		e4.EmpName = Mick;
+		e3.getDetails();
+		e4.getDetails();
+	}
+}

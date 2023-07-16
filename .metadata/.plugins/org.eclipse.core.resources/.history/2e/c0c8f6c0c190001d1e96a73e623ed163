@@ -1,0 +1,5 @@
+package firstDecPackage;
+
+public class Static3 {
+	Static2 s3 = new Static2(0, null);
+}

@@ -1,0 +1,16 @@
+package firstDecPackage;
+import java.util.Scanner;
+public class Test {
+	public static void main(String[] args) {
+		String a = "JavaAutomation training with Selenium and testNg and Github and other";
+		System.out.println(a.endsWith("n"));	
+		System.out.println(a.endsWith("Ation"));
+		System.out.println(a.indexOf("A"));
+		System.out.println(a.indexOf("Ja",4));
+		String replace = a.replaceAll("and", ",");
+				System.out.println(replace);
+				String split = a.split("\\s")
+		
+	}
+
+}

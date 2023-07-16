@@ -1,0 +1,17 @@
+package firstDecPackage;
+
+public class Arithmatic1 {  // Reverse number 345 --> 543
+
+	public static void main(String[] args) { 
+		int i=10;  int j=345;
+		System.out.print(j%i);
+		System.out.print((j/i)%i);
+		System.out.println((j/i)/i);
+		
+		int num=132;
+				System.out.println(num%10);
+				System.out.print(num/num);
+	
+	}
+
+}

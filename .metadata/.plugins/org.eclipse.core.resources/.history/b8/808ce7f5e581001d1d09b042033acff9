@@ -1,0 +1,21 @@
+package firstDecPackage;
+
+import java.util.Scanner;
+
+public class Ifelse {
+	public static void main(String[] args) {
+		/*
+		 * Scanner sc = new Scanner(System.in); System.out.println("Enter Lenght =");
+		 * int a = sc.nextInt(); System.out.println("Enter breathe ="); int b =
+		 * sc.nextInt(); if(a == b) { System.out.println("its a Square"); }else {
+		 * System.out.println("Its a rectangle"); }
+		 */
+		Scanner sc = new Scanner(System.in);
+		int x = sc.nextInt(); int y =sc.nextInt();
+		if(X>y) {
+			System.out.println("x is greater than y");
+		}else {
+			System.out.println("y is greater than x");
+		}
+	}
+}

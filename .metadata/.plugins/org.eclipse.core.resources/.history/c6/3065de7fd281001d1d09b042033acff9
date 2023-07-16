@@ -1,0 +1,19 @@
+package firstDecPackage;
+
+public class Lopp {
+
+	public static void main(String[] args) {
+		
+		  int i = 2345;  
+		  System.out.println(i +=8);
+		  System.out.println(i /=3); 
+		  System.out.println(i %=5);
+		  System.out.println(i *=5);
+		  int b = 23; int c=45;
+		  System.out.println(b==c);
+
+	    System.out.println(Math.pow(7,5));
+	}
+
+}
+

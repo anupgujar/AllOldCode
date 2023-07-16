@@ -1,0 +1,14 @@
+package firstDecPackage;
+
+public class ReturnTypeHomeWork2 {
+	public static void main(String[] args) {
+		double i = Rembal(2800.456,1200.8467);
+		
+	}
+	public static double Rembal(double accountbalance, double withdeawnamount){
+		double Bankbalance = accountbalance - withdeawnamount; 
+		return Rembal;
+	}
+	
+	
+}

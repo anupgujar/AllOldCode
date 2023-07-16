@@ -1,0 +1,28 @@
+package firstDecPackage;
+
+public class LearnString {
+
+	public static void main(String[] args) {
+		String q = "Selenium Class";
+		String p = "Selenium Class";
+		String r = new String("Selenium Class");
+		String s = new String("Selenium Class");
+		if(P == q) {
+			System.out.println("First");
+		}
+		if(P == r) {
+			System.out.println("Second");
+		}
+		if(P == s) {
+			System.out.println("Third");
+		}
+		if(r == s) {
+			System.out.println("Forth");
+		}
+		if(r.equals(s)) {
+			System.out.println("First");
+		}
+
+	}
+
+}

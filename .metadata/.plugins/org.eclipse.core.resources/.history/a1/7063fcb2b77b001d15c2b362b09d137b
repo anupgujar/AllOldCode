@@ -1,0 +1,24 @@
+package firstDecPackage;
+
+public class Variable2 {
+
+	static int age = 43;
+	static float A; 
+	static char name1='C'; 
+	static boolean Cond;
+	Static double Do;
+	public static void main(String[] arg) {
+		
+		// float len=0.1;
+		char name = 'A';
+		
+		System.out.println(name);
+      System.out.println(name1);
+		System.out.println(age);
+		System.out.println(A);
+		System.out.println(Cond);
+		System.out.println(Do);
+		
+	}
+	
+}

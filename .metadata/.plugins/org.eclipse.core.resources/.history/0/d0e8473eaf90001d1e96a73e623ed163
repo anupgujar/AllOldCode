@@ -1,0 +1,20 @@
+package firstDecPackage;
+
+public class Static {
+		int a = 100;
+		String p = "Hello World";
+		static int y = 50;
+	public static void methodA(){
+		String data = "Hi";
+	System.out.println(y);
+	}
+	public void methodB() {
+		String data = "Hello";
+		System.out.println(data);
+		System.out.println(y);
+	}
+	public static void main(String[] args) {
+		Static s1 = new Static();
+	}
+}
+

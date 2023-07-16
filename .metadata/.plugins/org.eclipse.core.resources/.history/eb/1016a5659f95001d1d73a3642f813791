@@ -1,0 +1,13 @@
+package firstDecPackage;
+
+public class Encapsulation {
+	private int age = 23;
+	
+	private void voteAge() {
+		System.out.println("This is Private Class"+age);
+	}
+	public static void main(String[] args) {
+		Encapsulation e1 = new Encapsulation();
+		e1.voteAge();
+	}
+}

@@ -1,0 +1,18 @@
+package firstDecPackage;
+
+public class MultilevelInheritance2 extends MultilevelInheritance1{
+	
+	public void modulo(int num1, int num2) {
+		a=num1%num2;
+		System.out.println("Modulo is---->" +a);
+	}
+	public static void main(String[] args) {
+		int x = 10; int y =5;
+		MultilevelInheritance2 i1 = new MultilevelInheritance2();
+		i1.add(x, y);
+		i1.multi(x, y);
+		i1.div(x, y);
+		i1.Sub(x, y);
+		i1.modulo(x, y);
+	}
+}

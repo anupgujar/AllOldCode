@@ -1,0 +1,17 @@
+package firstDecPackage;
+
+import java.util.Scanner;
+
+public class StarConsole {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int multi=sc.nextInt();
+		int a=0;
+		for (int i = 1; i <=10; i++) {
+			a=i*multi;
+			System.out.println("Multification table of "+multi+"is"+i*multi+"="+a);
+		}
+	}
+	
+}
+

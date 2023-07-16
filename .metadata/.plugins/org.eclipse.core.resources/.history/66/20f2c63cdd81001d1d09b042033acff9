@@ -1,0 +1,50 @@
+package firstDecPackage;
+
+public class Lopp {
+	public static void main(String[] args) {
+		/*
+		 * int i = 2345; System.out.println(i +=8); System.out.println(i /=3);
+		 * System.out.println(i %=5); System.out.println(i *=5); int b = 23; int c=45;
+		 * System.out.println(b==c);
+		 * 
+		 * System.out.println(Math.pow(7,5));
+		 */
+		
+		/*
+		 * int a = 55; int b = 70; System.out.println(a < 50 && a < b);
+		 * System.out.println(a < 50 || a < b);
+		 */
+		/*
+		 * int a = 78; int b = 45; int c = 62; System.out.println("Total marks =" +
+		 * (a+b+c)); Percent = (a+b+c)/3; System.out.println("Percentage ="+
+		 * Percent+"%");
+		 */ 
+		//int a = 6; int b =8; int c=1;
+		/*
+		 * c=a; a=b; b=c;
+		 */
+		/*
+		 * b=b-a; a=b+a; b=-(b-a); System.out.println(a); System.out.println(b);
+		 */
+		/*
+		 * float Fahrenheit,Celsius; Fahrenheit = 98; Celsius = ((Fahrenheit-32)*5)/9;
+		 * System.out.println("Temperature in celsius is: "+Celsius);
+		 */
+		/*
+		 * int TotalStudents = 90; int Girls=45; int Boys=45; int TotalSecuredGradeA;
+		 * TotalSecuredGradeA = (((Girls+Boys)*50)/100);
+		 * System.out.println(TotalSecuredGradeA);
+		 * System.out.println("total number of girls getting grade 'A' = " +
+		 * (TotalSecuredGradeA - 20) );
+		 */
+	String Number = "1 2 3 4 5";
+	int t; int y;
+	t=Number.charAt(0);
+	y=Number.charAt(3);
+	System.out.println(Number.length());
+	System.out.println(t+y);
+	
+	} 
+
+}
+

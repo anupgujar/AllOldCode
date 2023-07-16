@@ -1,0 +1,17 @@
+package firstDecPackage;
+
+public class ReturnTypeHomeWork2 {
+	public static void main(String[] args) {
+		double data = accBal(2800.456,1200.8467);
+		
+		System.out.println("Remaining Account balance after withdrawn amount ="+data);
+	}
+	public static double accBal(double accountbalance, double withdrawnamount){
+		double accBal = accountbalance - withdrawnamount; 
+		System.out.println("Available account balance =" +accountbalance);
+		System.out.println("Amount withdrawn from account "+withdrawnamount);
+		return accBal;
+	}
+	
+	
+}

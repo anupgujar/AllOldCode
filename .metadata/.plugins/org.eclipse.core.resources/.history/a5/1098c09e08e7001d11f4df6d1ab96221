@@ -1,0 +1,34 @@
+package scripts;
+
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeMethod;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.AfterMethod;
+
+public class cookbookTestNG {
+	WebDriver driver;
+  @Test
+  public void cookbook() throws InterruptedException {
+	  driver.findElement(By.name("fuel_type")).click();
+	  WebElement ABS = driver.findElement(By.name("abs"));
+	  Thread.sleep(3000);
+	  if(ABS.isSelected()) {
+		  ABS.click();
+	  }
+  }
+  @BeforeMethod
+  public void beforeMethod() {
+	  System.setProperty("webdriver,driver,firefox", "test/resources/geckodriver.exe");
+	  driver = new FirefoxDriver();
+	  driver.get("http://www.cookbook.seleniumacademy.com/Config.html");
+	  
+  }
+
+  @AfterMethod
+  public void afterMethod() {
+  }
+
+}

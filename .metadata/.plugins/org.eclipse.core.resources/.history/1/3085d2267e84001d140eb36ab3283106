@@ -1,0 +1,28 @@
+package firstDecPackage;
+
+public class ForLoop {
+    // static int i;
+	public static void main(String[] args) {
+		String Colour[] = {"Red","Black","Blue","Green","White","Orange","Pink","Brown","Purple","Marron","Grey","Skyblue"};
+		/*
+		 * for(int i=1; i<=10; i++) { System.out.println("Print Colour as "+ Colour[i]);
+		 * }
+		 */
+		/*
+		 * int i=0; while(i<=10) { System.out.println("Print Colour as "+ Colour[i]);
+		 * i++; }
+		 */
+		/*
+		 * int i[] = {1,2,3,4,5,6}; for (int a : i) {
+		 * System.out.println("Print Colour as "+ Colour[a]);
+		 * 
+		 * }
+		 */
+		int i =0;
+	do{
+			System.out.println("Print Colour as "+ Colour[i]);
+		}while(i<=10);
+		
+	}
+
+}

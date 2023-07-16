@@ -1,0 +1,28 @@
+package firstDecPackage;
+import java.util.Scanner;
+public class Test {
+	public static void main(String[] args) {
+		String t = "";
+		String a = "JavaAutomation training with Selenium and testNg and Github and other";
+		System.out.println(a.endsWith("n"));	
+		System.out.println(a.endsWith("Ation"));
+		System.out.println(a.indexOf("A"));
+		System.out.println(a.indexOf("Ja",4));
+		String replace = a.replaceAll("and", ",");
+				System.out.println(replace);
+				String[] split = a.split("i");
+				for (String string : split) {
+					System.out.println(string);	
+				}
+		String b = "        I am leaning Java with Selenium automation           ";
+		System.out.println(b.trim());
+		System.out.println(b.toUpperCase());
+		System.out.println(b.toLowerCase());
+		System.out.println(b.length());
+		t = b.replace("I am","C++");
+		System.out.println(t);
+		
+		
+	}
+
+}

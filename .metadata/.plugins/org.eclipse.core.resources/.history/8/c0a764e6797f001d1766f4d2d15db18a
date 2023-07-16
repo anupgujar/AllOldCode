@@ -1,0 +1,19 @@
+package firstDecPackage;
+
+public class LeranMethod {
+
+	public static void main(String[] args) {
+		aName();
+		
+	}
+
+	public static void aName() {
+		System.out.println("Print my name");
+	}
+
+	public void amethod() {
+		System.out.println("I am learning java");
+	}
+	
+	}
+

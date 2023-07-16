@@ -1,0 +1,17 @@
+package firstDecPackage;
+public class Test {
+	static void different() {
+		System.out.println("This is static method");
+	}
+	
+	void same() {
+		System.out.println("This is instatace?Global methid");
+	}
+	public static void main(String[] args) {
+	different();
+	Test a = new Test();
+	a.same();
+		
+	}
+
+}

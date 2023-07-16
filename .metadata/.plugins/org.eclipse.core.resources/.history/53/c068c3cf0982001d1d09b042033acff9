@@ -1,0 +1,24 @@
+package firstDecPackage;
+
+import java.util.Scanner;
+
+public class HigherAgeAmong3 {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter first person age =");
+		int Age1 = sc.nextInt();
+		System.out.println("Enter second person age =");
+		int Age2 = sc.nextInt();
+		System.out.println("Enter Third person age =");
+		int Age3 = sc.nextInt();	
+		if(age1>age2 && age1>age3) {
+			System.out.println("First person in oldest");
+		}else if(age2>age1 && age2>age3) {
+			System.out.println("Second person in oldest");
+		}else if(age3>age1 && age3>age1) {
+			System.out.println("Third person in oldest");
+		}else {
+			System.out.println("all with same ages");
+		}
+	}
+}

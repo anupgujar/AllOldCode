@@ -1,0 +1,10 @@
+package firstDecPackage;
+import java.util.Scanner;
+public class Test {
+	public static void main(String[] args) {
+		String a = "JavaAutomation";
+		System.out.println(a.endsWith("n"));	
+		System.out.println(a.endsWith("ation"));
+	}
+
+}

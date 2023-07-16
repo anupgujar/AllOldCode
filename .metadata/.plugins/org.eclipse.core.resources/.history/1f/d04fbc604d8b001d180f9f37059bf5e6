@@ -1,0 +1,24 @@
+package firstDecPackage;
+
+public class Array1 {
+	public static void main(String[] args) {
+		float a[][] = new float[2][3];
+		a[0][0] = 23.5f;
+		a[0][1] = 204.5f;
+		a[0][2] = 25.5f;
+		a[1][0] = 26.5f;
+		a[1][1] = 650.5f;
+		a[1][2] = 60.5f;
+		
+		int row = a.length;
+		int col = a[0].length;
+		System.out.println(row);
+		System.out.println(col);
+		
+		for (int i = 0; i < row; i++) {
+			for (int j = 0; j < col; j++) {
+				System.out.print(a[i][j]+" ");
+			}System.out.println();
+		}
+	}
+}

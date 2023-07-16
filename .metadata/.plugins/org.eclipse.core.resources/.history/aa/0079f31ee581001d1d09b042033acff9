@@ -1,0 +1,18 @@
+package firstDecPackage;
+
+import java.util.Scanner;
+
+public class Ifelse {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter Lenght =");
+		int a  = sc.nextInt(); 
+		System.out.println("Enter breathe =");
+		int b = sc.nextInt(); 
+		if(a == b) {
+		System.out.println("its a Square");
+		}else {
+			System.out.println("Its a rectangle");
+		}
+	}
+}

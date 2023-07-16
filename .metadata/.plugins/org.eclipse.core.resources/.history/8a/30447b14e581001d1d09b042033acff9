@@ -1,0 +1,15 @@
+package firstDecPackage;
+
+import java.util.Scanner;
+
+public class Ifelse {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int a  = sc.nextInt(); int b = sc.nextInt(); 
+		if(a == b) {
+		System.out.println("its a Square");
+		}else {
+			System.out.println("Its a rectangle");
+		}
+	}
+}

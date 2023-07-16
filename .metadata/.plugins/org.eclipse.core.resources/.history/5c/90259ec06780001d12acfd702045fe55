@@ -1,0 +1,25 @@
+package firstDecPackage;
+
+public class Employee {
+	int empNo;
+	String empFirstName;
+	double salary;
+	String companyName;
+
+	public static void main(String[] args) {
+		
+	}
+	public void empPerformace() {
+		
+	}
+	public void attendacne() {
+		
+	}
+	public void empSalaryCalculation() {
+		Employee anup = new Employee();
+		Employee avish = new Employee();
+		Employee ajay = new Employee();
+	}
+	
+}
+			//Anup  //Avish   // Ajay

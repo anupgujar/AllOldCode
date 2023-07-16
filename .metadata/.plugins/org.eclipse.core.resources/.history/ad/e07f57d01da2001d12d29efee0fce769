@@ -1,0 +1,12 @@
+package firstDecPackage;
+public class Test {
+	
+	public static void main(String[] args) {
+	System.out.println("Java");
+	}
+	class Same{
+		public static void main(String[] args) {
+			System.out.println("Selenium");
+		}
+	}
+}

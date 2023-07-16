@@ -1,0 +1,8 @@
+package firstDecPackage;
+
+public class ConstructorAnimal {
+	
+	public ConstructorAnimal() {
+		System.out.println("3 global Variable");
+	}
+}

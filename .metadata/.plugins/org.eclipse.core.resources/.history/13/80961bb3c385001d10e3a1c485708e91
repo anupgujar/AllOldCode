@@ -1,0 +1,19 @@
+package firstDecPackage;
+
+public class ReturnTypeHomeWork {
+	public static void main(String[] args) {
+		boolean i = java("I am lear");
+		if(i) {
+			System.out.println("String name is too long");
+		}else {
+			System.out.println("String name is too short");
+		}
+	}
+	public static boolean java(String name) {
+		if(name.length()>10) {
+			return true;
+		}else {
+			return false;
+		}
+	}
+}

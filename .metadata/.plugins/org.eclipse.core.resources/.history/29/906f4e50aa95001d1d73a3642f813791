@@ -1,0 +1,9 @@
+package firstDecPackage;
+
+public class EncapsulationEvenNo1 {
+	public static void main(String[] args) {
+		EncapsulationEvenNo e1 = new EncapsulationEvenNo();
+		e1.setN(2);
+		
+	}
+}

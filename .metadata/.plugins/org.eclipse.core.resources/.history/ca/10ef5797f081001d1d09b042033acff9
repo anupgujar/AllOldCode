@@ -1,0 +1,16 @@
+package firstDecPackage;
+
+import java.util.Scanner;
+
+public class GradingSystem {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter marks obtained =" );
+		int marks = sc.nextInt();
+		if(marks>80) {
+			sysoint marks = sc.nextInt();
+		}
+		
+	}
+
+}

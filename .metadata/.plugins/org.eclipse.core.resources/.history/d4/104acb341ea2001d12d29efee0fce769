@@ -1,0 +1,17 @@
+package firstDecPackage;
+public class Test {
+	void test(){
+		System.out.println("Main");
+	}
+	public static void main(String[] args) {
+	Test a = new Test();
+	Same b = new Same();
+	a.test();
+	b.same();
+	}
+	class Same{
+		void same() {
+			System.out.println("Same");
+		}
+	}
+}

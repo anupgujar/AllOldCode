@@ -1,0 +1,31 @@
+package firstDecPackage;
+
+public class Employee {
+	int empNo;
+	String empFirstName;
+	double salary;
+	String companyName;
+	byte i = -128; byte j = 127;
+	short k = -32768; short l = 32767;
+	int n = -2147483648; int m = 2147483647;
+	//long o = -9223372036854775808; long p = 9223372036854775807;
+	char myChar = 65535;
+	
+	public static void main(String[] args) {
+		
+	}
+	public void empPerformace() {
+		
+	}
+	public void attendacne() {
+		
+	}
+	public void empSalaryCalculation() {
+		Employee anup = new Employee();
+		Employee avish = new Employee();
+		Employee ajay = new Employee();
+		
+	}
+	
+}
+			//Anup  //Avish   // Ajay

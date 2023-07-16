@@ -1,0 +1,19 @@
+package firstDecPackage;
+
+public class Variable2 {
+
+	int age = 43;
+	float A; 
+	static char name1; 
+	public static void main(String[] arg) {
+		
+		//float len=2.5;
+		char name = 'A';
+		
+		System.out.println(name);
+      System.out.println(name1);
+		
+		
+	}
+	
+}

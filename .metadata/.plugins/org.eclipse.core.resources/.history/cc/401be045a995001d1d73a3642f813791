@@ -1,0 +1,22 @@
+package firstDecPackage;
+
+public class Encapsulation {
+	private int age = 23;
+	
+	public int getAge() {
+		return age;
+	}
+	public void setAge(int age) {
+		if(age<18) {
+			System.out.println("This is not valid age");
+		}else {
+			
+		
+		this.age = age;
+		}
+	}
+	public static void main(String[] args) {
+		Encapsulation e1 = new Encapsulation();
+		
+	}
+}

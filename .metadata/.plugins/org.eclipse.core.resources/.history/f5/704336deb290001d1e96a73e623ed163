@@ -1,0 +1,15 @@
+package firstDecPackage;
+
+public class Static2 {
+	int roll;
+	String name;
+	static String collage = "IIT Mumbai";
+	
+	public Static2(int roll, String name) {
+		this.roll = roll;
+		this.name = name;
+		System.out.println("Object is created");
+	}
+	
+	
+}

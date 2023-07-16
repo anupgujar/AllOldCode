@@ -1,0 +1,15 @@
+package firstDecPackage;
+
+public class Variable2 {
+
+	int age = 43;
+	// float A = 2.3; 
+	public static void main(String[] arg) {
+		
+		System.out.println();
+
+		
+		
+	}
+	
+}

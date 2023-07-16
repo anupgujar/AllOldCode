@@ -1,0 +1,14 @@
+package firstDecPackage;
+
+import java.util.Scanner;
+
+public class StarConsole {
+	static char z;
+	public static void main(String[] args) {
+		
+		for (int a = 1; a <= z; a++) {
+			System.out.println();
+		}
+	
+}
+}

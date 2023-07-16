@@ -1,0 +1,14 @@
+package firstDecPackage;
+
+public class MethodA {
+	public static void main(String[] args) {
+		sum(10,30);
+		//System.out.println(i);
+	}
+
+	public static void sum(int num1 , int num2) {
+		int sum = num1 + num2;
+		System.out.println(sum);
+		//return sum;
+	}
+}

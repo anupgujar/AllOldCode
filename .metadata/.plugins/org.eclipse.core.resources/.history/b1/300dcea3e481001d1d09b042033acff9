@@ -1,0 +1,11 @@
+package firstDecPackage;
+
+import java.util.Scanner;
+
+public class Ifelse {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int a , b = sc.nextInt();
+		System.out.println("Enter lengh =" a);
+	}
+}

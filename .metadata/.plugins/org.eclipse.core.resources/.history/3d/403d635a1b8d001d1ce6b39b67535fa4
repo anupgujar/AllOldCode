@@ -1,0 +1,24 @@
+package firstDecPackage;
+
+import java.util.Scanner;
+
+public class Test1 {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Enter a String" );
+		String s = sc.nextLine();
+		
+		
+		System.out.println("Enter the interger");
+		int a = sc.nextInt();
+		
+		
+		System.out.println("Enter the float");
+		float b = sc.nextFloat();
+		
+		System.out.println("You Entered String is "+s);
+		System.out.println("You entered integer is "+a);
+		System.out.println("You entered float is "+b);
+	}
+}

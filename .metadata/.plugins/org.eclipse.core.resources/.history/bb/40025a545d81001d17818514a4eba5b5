@@ -1,0 +1,15 @@
+package firstDecPackage;
+
+public class Lopp {
+static int i;
+	public static void main(String[] args) {
+		/*
+		 * int a = 2345; int b = 8; int c=3; System.out.println(i=(a+b)/c);
+		 * System.out.println(i=i%5); System.out.println(i*5);
+		 */
+
+	    System.out.println((((8+2345)/3)%5)*5);
+	}
+
+}
+

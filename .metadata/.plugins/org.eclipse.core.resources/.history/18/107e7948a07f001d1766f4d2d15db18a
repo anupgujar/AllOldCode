@@ -1,0 +1,13 @@
+package firstDecPackage;
+
+public class LearnArray7 {
+	public static void main(String[] args) {
+		boolean a = 2>5;
+		boolean b = 3>=5;
+		boolean c = 5>3;
+		boolean e[]= {6>5,45<=43,2<5,1>4,4<=4,6==6,6+1==7,7>=7,5>=8};
+		System.out.println(a);
+		System.out.println(b);
+		System.out.println(c);
+	}
+}

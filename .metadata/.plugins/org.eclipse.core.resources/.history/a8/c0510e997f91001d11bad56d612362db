@@ -1,0 +1,9 @@
+package firstDecPackage;
+
+public class SingleInheritance {
+	int rollNumber = 1;
+	 public static void main(String[] args) {
+		 SingleInheritance s1 = new SingleInheritance();
+		System.out.println(s1.rollNumber);
+	}
+}

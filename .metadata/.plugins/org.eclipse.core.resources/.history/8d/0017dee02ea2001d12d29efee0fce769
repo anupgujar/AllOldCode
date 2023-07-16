@@ -1,0 +1,10 @@
+package firstDecPackage;
+public class Test {
+	Test() {
+		 System.out.println("Constructor method called.");
+		 }
+	public static void main(String[] args) {
+		 Test object = new Test(); 
+		 }
+
+}

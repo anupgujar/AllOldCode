@@ -1,0 +1,16 @@
+package firstDecPackage;
+
+public class PrintName {
+
+	private void mail() {
+		// TODO Auto-generated method stub
+
+	
+
+		System.out.println("Hello World");
+		System.out.println("Welcome to Java Training");
+		
+
+	}
+
+}

@@ -1,0 +1,25 @@
+package scripts;
+
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeMethod;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.AfterMethod;
+
+public class cookbookTestNG {
+	WebDriver driver;
+  @Test
+  public void cookbook() {
+  }
+  @BeforeMethod
+  public void beforeMethod() {
+	  System.setProperty("webdriver,driver,firefox", "test/resources/geckodriver.exe");
+	  driver = new FirefoxDriver();
+	  
+  }
+
+  @AfterMethod
+  public void afterMethod() {
+  }
+
+}

@@ -1,0 +1,57 @@
+package firstDecPackage;
+
+import java.util.Scanner;
+
+public class Ifelse {
+	public static void main(String[] args) {
+		/*
+		 * Scanner sc = new Scanner(System.in); System.out.println("Enter Lenght =");
+		 * int a = sc.nextInt(); System.out.println("Enter breathe ="); int b =
+		 * sc.nextInt(); if(a == b) { System.out.println("its a Square"); }else {
+		 * System.out.println("Its a rectangle"); }
+		 */
+		/*
+		 * Scanner sc = new Scanner(System.in); int x = sc.nextInt(); int y
+		 * =sc.nextInt(); if(x>y) { System.out.println("x is greater than y"); }else {
+		 * System.out.println("y is greater than x"); }
+		 */
+		/*
+		 * Scanner sc = new Scanner(System.in); int quantity = sc.nextInt();
+		 * if(quantity*100>=1000) {
+		 * System.out.println("You will get 10% descount and your total cost is " +
+		 * ((quantity*100)/100)*90); }else {
+		 * System.out.println("cost of purchased qun is = " +quantity*100); }
+		 */
+		
+		/*
+		 * Scanner sc = new Scanner(System.in); System.out.println("Enter you salary ");
+		 * int s = sc.nextInt(); System.out.println("Enter your year of experience = ");
+		 * int e = sc.nextInt(); if(e>=5) {
+		 * System.out.println("You have get 5% of bonus that is "+ ((s/100)*105)); }
+		 */
+		int year;	// total years of service
+		 int sal;// variable to store emp salary.
+		 double d;//variable to calculate gross salary.
+		 System.out.println("Enter total Years of services==>   ");
+		 Scanner t=new Scanner(System.in);
+		 year=t.nextInt();
+		 
+		 if(year>5)
+		 {
+			 System.out.println("Congrats..YES..! your total year of services more than 5 years\n Please Enter your salary..> ");
+			 sal=t.nextInt();
+			 System.out.println("YOUR SALARY IS..> "+sal);
+			 System.out.println("YOUR 5% BONUS  IS..> "+sal*0.05);
+			 System.out.println("YOUR NET BONUS WITH SALARY IS..> "+(sal+(sal*0.05)));
+		  }
+		 
+		 else
+		 {
+			 System.out.println("NO BONUS..");
+		 }
+			
+
+		}
+		}
+	}
+

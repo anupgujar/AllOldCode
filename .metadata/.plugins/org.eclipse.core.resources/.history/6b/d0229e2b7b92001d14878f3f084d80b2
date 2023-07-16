@@ -1,0 +1,14 @@
+package firstDecPackage;
+
+import java.util.Scanner;
+
+public class StarConsole {
+	public static void main(String[] args) {
+		String a[] = {"A","Java","Selenium","training"};
+		for (String i : a) 
+			System.out.print(i+" ");
+		
+	}
+	
+}
+

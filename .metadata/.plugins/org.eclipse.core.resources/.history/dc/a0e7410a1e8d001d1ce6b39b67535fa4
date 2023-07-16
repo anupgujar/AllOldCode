@@ -1,0 +1,18 @@
+package firstDecPackage;
+
+import java.util.Scanner;
+
+public class Test1 {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int c;
+		System.out.println("Enter x and y ");
+		int x = sc.nextInt();
+		int y = sc.nextInt();
+		System.out.println("Before swapping\nx="+x+"\ny="+y);
+		c=x;
+		x=y;
+		y=c;
+		System.out.println("After swapping\nx="+x+"\ny="+y);
+	}
+}

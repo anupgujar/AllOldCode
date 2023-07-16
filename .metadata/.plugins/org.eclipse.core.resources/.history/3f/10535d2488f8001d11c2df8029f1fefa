@@ -1,0 +1,70 @@
+package scripts;
+
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeMethod;
+
+import static org.testng.Assert.assertEquals;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.AfterMethod;
+
+public class demoqaTestNG<Select> {
+	WebDriver driver;
+  @Test
+  public void demoqaTest() throws InterruptedException {
+	  Thread.sleep(5000);
+	  String uRL = driver.getCurrentUrl();
+	  String actualURL = "https://demoqa.com/automation-practice-form";
+	  assertEquals(uRL, actualURL);
+	  driver.findElement(By.cssSelector("input[placeholder='First Name']")).sendKeys("John");
+	  WebElement FirstName =driver.findElement(By.cssSelector("input[placeholder='First Name']"));
+	  String ActualFname = FirstName.getAttribute("value");
+	  System.out.println("First Name is -"+ActualFname);
+	  String ExpectedFname = "John";
+	  assertEquals(ActualFname,ExpectedFname);
+	  Thread.sleep(5000);
+	  driver.findElement(By.xpath("//input[@id='lastName']")).sendKeys("Karter");
+	  WebElement LastName = driver.findElement(By.xpath("//input[@id='lastName']"));
+	  System.out.println("Last Name is -"+LastName.getAttribute("value"));
+	  driver.findElement(By.cssSelector("input[class='mr-sm-2 form-control']")).sendKeys("johnk@gmail.com");
+	  driver.findElement(By.xpath("//label[@for='gender-radio-1']")).click();
+	  Thread.sleep(5000);
+	  driver.findElement(By.id("userNumber")).sendKeys("12330987654");
+	  WebElement mobileNo = driver.findElement(By.id("userNumber"));
+	  System.out.println("Mobile No -"+mobileNo.getAttribute("value"));
+	  
+	  WebElement month = driver.findElement(By.id("dateOfBirthInput"));
+	  Select option = new Select(month);
+	  
+	  driver.findElement(By.className("react-datepicker__month-select")).click();
+	  Thread.sleep(5000);
+		/*
+		 * String currentURL = driver.getCurrentUrl(); System.out.println(currentURL);
+		 * driver.get(currentURL); driver.navigate().refresh();
+		 * driver.findElement(By.cssSelector("input[placeholder='First Name']")).
+		 * sendKeys(Keys.F5);
+		 */
+
+	  
+	  
+  }
+  @BeforeMethod
+  public void beforeMethod() throws InterruptedException {
+	  System.setProperty("webDriver,firefox,driver", "/webdrivertraining/test/resources/geckodriver.exe");
+	  driver = new FirefoxDriver();
+	  driver.get("https://demoqa.com/automation-practice-form");
+	 
+	  
+  }
+
+  @AfterMethod
+  public void afterMethod() {
+  //driver.quit();
+  }
+  
+
+}

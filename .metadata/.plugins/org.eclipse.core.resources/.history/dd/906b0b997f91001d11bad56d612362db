@@ -1,0 +1,12 @@
+package firstDecPackage;
+
+public class SingleInheritance1 extends SingleInheritance {
+	String name = "Selenium";
+	
+	public static void main(String[] args) {
+		SingleInheritance1 s1 = new SingleInheritance1();
+		s1.rollNumber = 12;
+		System.out.println(s1.rollNumber);
+		System.out.println(s1.name);
+	}
+}

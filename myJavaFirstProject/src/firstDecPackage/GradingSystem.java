@@ -1,0 +1,26 @@
+package firstDecPackage;
+
+import java.util.Scanner;
+
+public class GradingSystem {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter marks obtained =" );
+		int marks = sc.nextInt();
+		if(marks>=80) {
+			System.out.println("Your grade is A");
+		}else if(marks<80 && marks>=60) {
+			System.out.println("Your grade is B");
+		}else if(60>marks && marks>=50) {
+			System.out.println("Your grade is C");
+		}else if(50>marks && marks>=45) {
+			System.out.println("Your grade is D");
+		}else if(45>marks && marks>=25) {
+			System.out.println("Your grade is E");
+		}
+		else{
+			System.out.println("Your grade is F - FAIL'");
+		}
+	}
+
+}

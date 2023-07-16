@@ -1,0 +1,42 @@
+package scripts;
+
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeMethod;
+
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.Dimension;
+import org.openqa.selenium.Point;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.testng.annotations.AfterMethod;
+public class FirstTestNGClass {
+	WebDriver driver;
+	
+  @Test
+  public void testAllGoogleLink() {	  	  
+	  List<WebElement> allGoogleLinks = driver.findElements(By.tagName("a"));
+	  for (WebElement getLink : allGoogleLinks) {
+		  System.out.println(getLink.getText()+ "-" + getLink.getAttribute("href"));
+	}
+  }
+  
+  @BeforeMethod
+  public void beforeMethod() {
+	  ChromeOptions options = new ChromeOptions();
+	  options.addArguments("-remote-allow-origins=*");
+	  driver =new ChromeDriver(options);
+	  
+	  System.setProperty("webdriver.chrome.driver", "test//resources//chromedriver.exe");
+		driver = new ChromeDriver();
+		driver.get("https://google.com");
+  }
+
+  @AfterMethod
+  public void afterMethod() {
+  }
+
+}

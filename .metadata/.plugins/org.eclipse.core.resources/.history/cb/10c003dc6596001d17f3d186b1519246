@@ -1,0 +1,14 @@
+package firstDecPackage;
+
+public class ExceptionHandling {
+	int a = 5;
+	int b[] = new int[2];
+	public void Exception() {
+		int c = a/0;
+		
+	}
+	public static void main(String[] args) {
+		ExceptionHandling s1 = new ExceptionHandling();
+		s1.Exception();
+	}
+}

@@ -1,0 +1,14 @@
+package firstDecPackage;
+
+public class ReturnTypeHomeWork2 {
+	public static void main(String[] args) {
+		double data = accBal(2800.456,1200.8467);
+		System.out.println(data);
+	}
+	public static double accBal(double accountbalance, double withdeawnamount){
+		double accBal = accountbalance - withdeawnamount; 
+		return accBal;
+	}
+	
+	
+}

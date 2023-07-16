@@ -1,0 +1,14 @@
+package firstDecPackage;
+import java.util.Scanner;
+public class Test {
+	public static void main(String[] args) {
+		String a = "JavaAutomation";
+		System.out.println(a.endsWith("n"));	
+		System.out.println(a.endsWith("Ation"));
+		System.out.println(a.indexOf("A"));
+		System.out.println(a.indexOf("av",4));
+		System.out.println(a.indent('J'));
+		
+	}
+
+}

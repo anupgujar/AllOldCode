@@ -1,0 +1,19 @@
+package firstDecPackage;
+
+public class ReturnTypeHomeWork {
+	public static void main(String[] args) {
+		boolean i = java("I am learning java returntype method");
+		if(i) {
+			System.out.println("String name is too long");
+		}else {
+			System.out.println("String name is too short");
+		}
+	}
+	public static boolean java(String name) { // Method signature
+		if(name.length()>10) {
+			return true;   						// Method body
+		}else {
+			return false;
+		}
+	}
+}

@@ -1,0 +1,90 @@
+package scripts;
+
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeMethod;
+
+import static org.testng.Assert.assertEquals;
+
+import java.time.Duration;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.AfterMethod;
+
+public class demoqaTestNG {
+	WebDriver driver;
+	WebDriverWait wait;
+
+	@Test
+	public void demoqaTest() throws InterruptedException {
+		
+		String uRL = driver.getCurrentUrl();
+		String actualURL = "https://demoqa.com/automation-practice-form";
+		assertEquals(uRL, actualURL);
+		//Thread.sleep(2000);
+		wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.cssSelector("input[placeholder='First Name']")));
+		driver.findElement(By.cssSelector("input[placeholder='First Name']")).sendKeys("John");
+		WebElement FirstName = driver.findElement(By.cssSelector("input[placeholder='First Name']"));
+		String ActualFname = FirstName.getAttribute("value");
+		System.out.println("First Name is -" + ActualFname);
+		String ExpectedFname = "John";
+		assertEquals(ActualFname, ExpectedFname);
+		//Thread.sleep(2000);
+		wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath("//input[@id='lastName']")));
+		driver.findElement(By.xpath("//input[@id='lastName']")).sendKeys("Karter");
+		WebElement LastName = driver.findElement(By.xpath("//input[@id='lastName']"));
+		System.out.println("Last Name is -" + LastName.getAttribute("value"));
+		driver.findElement(By.cssSelector("input[class='mr-sm-2 form-control']")).sendKeys("johnk@gmail.com");
+		driver.findElement(By.xpath("//label[@for='gender-radio-1']")).click();
+		//Thread.sleep(2000);
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("userNumber")));
+		driver.findElement(By.id("userNumber")).sendKeys("12330987654");
+
+		WebElement mobileNo = driver.findElement(By.id("userNumber"));
+		System.out.println("Mobile No -" + mobileNo.getAttribute("value"));
+		//Thread.sleep(5000);
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("dateOfBirthInput")));
+		driver.findElement(By.id("dateOfBirthInput")).click();
+		//Thread.sleep(5000);
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("react-datepicker__month-select")));
+		WebElement month = driver.findElement(By.className("react-datepicker__month-select"));
+		Select option = new Select(month);
+		option.selectByValue("11");
+
+		WebElement year = driver.findElement(By.className("react-datepicker__year-select"));
+		Select make = new Select(year);
+		make.selectByValue("1998");
+		driver.findElement(By.className("react-datepicker__day--005")).click();
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@id='subjectsInput']")));
+		WebElement subject = driver.findElement(By.xpath("//input[@id='subjectsInput']"));
+		//subject.sendKeys("chem");
+		//subject.click();
+		WebElement checkBox = driver.findElement(By.className("custom-control-label"));
+		if(!checkBox.isSelected()) {
+			checkBox.click();
+		}
+
+	}
+
+	@BeforeMethod
+	public void beforeMethod() throws InterruptedException {
+		System.setProperty("webDriver,firefox,driver", "/webdrivertraining/test/resources/geckodriver.exe");
+		driver = new FirefoxDriver();
+		driver.get("https://demoqa.com/automation-practice-form");
+		
+		wait = new WebDriverWait(driver, Duration.ofSeconds(7),Duration.ofMillis(250));
+
+	}
+
+	@AfterMethod
+	public void afterMethod() {
+		//driver.quit();
+	}
+
+}

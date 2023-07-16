@@ -1,0 +1,16 @@
+package firstDecPackage;
+
+public class Relational1 {
+
+	public static void main(String[] args) {
+		int age=61;
+		if(age>18) {
+			System.out.println("Ypu need to pay full bus ticket");
+			if(age>60) {
+				System.out.println("You are sinior citizen tou need to pay 50%");
+			}
+		}
+
+	}
+
+}

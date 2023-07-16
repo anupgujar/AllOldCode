@@ -1,0 +1,17 @@
+package firstDecPackage;
+
+public class Variable1 {
+
+	int age;
+	static int weight;
+	public static void main(String[] args) {
+	
+		int age1;
+		int weight1=90;
+		System.out.println(age1);
+	    System.out.println(weight1);
+		
+	    
+	}
+
+}
