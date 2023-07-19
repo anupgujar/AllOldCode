@@ -31,6 +31,7 @@ public class ActionClassAnnaAssignment {
 		WebElement mechEngg = driver.findElement(By.xpath("//li/a[contains(text(),'Mechanical')]"));
 	
 		mechEngg.click();
+		
 		String parentWindow = driver.getWindowHandle();
 		Set<String> allWindow = driver.getWindowHandles();
 		
@@ -39,6 +40,7 @@ public class ActionClassAnnaAssignment {
 				driver.switchTo().window(oneWindow);
 			}
 		}
+		
 		wait.until(ExpectedConditions.urlToBe("https://www.annauniv.edu/dme/"));
 		String expectedPageTitle = "Department of Mechanical Engineering | Anna University Chennai";
 		String actualPageTitle = driver.getTitle();
@@ -50,8 +52,10 @@ public class ActionClassAnnaAssignment {
 		WebElement aUFRG = driver.findElement(By.xpath("//a[@href='https://annauniv.edu/aufrgicc']"));
 		builder.moveToElement(aUFRG).perform();
 		aUFRG.click();
+		
 		String mechPageHandle = driver.getWindowHandle();
 		Set<String> handles = driver.getWindowHandles();
+		
 		for(String onehandle:handles) {
 			if(!onehandle.equals(mechPageHandle)) {
 				driver.switchTo().window(onehandle);
@@ -85,7 +89,7 @@ public class ActionClassAnnaAssignment {
 
 	@AfterMethod
 	public void afterMethod() {
-		
+
 	}
 
 }

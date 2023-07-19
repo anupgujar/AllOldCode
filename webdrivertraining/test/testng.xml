@@ -6,5 +6,6 @@
       <class name="scripts.FirstTestNGClass"/>
       <class name="scripts.MyFirstTestNGTest"/>
     </classes>
+ 
   </test> <!-- Test -->
 </suite> <!-- Suite -->
